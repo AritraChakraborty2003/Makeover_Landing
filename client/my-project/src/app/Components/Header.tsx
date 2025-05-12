@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu } from "lucide-react";
 import Drawer from "react-modern-drawer";
+import Image from "next/image";
+
 import "react-modern-drawer/dist/index.css";
 
 export default function Header() {
@@ -11,13 +13,25 @@ export default function Header() {
   const toggleDrawer = () => setIsOpen((prev) => !prev);
 
   return (
-    <header className="flex justify-between items-center px-6 py-4 bg-purple-100 shadow-sm">
-      <h1 className="text-xl md:text-2xl font-bold text-purple-900">
-        Cosmetics
-      </h1>
+    <header className="flex justify-between items-center px-6 py-2 bg-purple-100 shadow-sm">
+      <Image
+        src="/logo.png"
+        height={70}
+        width={70}
+        alt="Logo"
+        className="hidden lg:block"
+      />
+
+      <Image
+        src="/logo.png"
+        height={56}
+        width={56}
+        alt="Logo"
+        className="block lg:hidden"
+      />
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex space-x-9 ml-28">
+      <nav className="hidden md:flex space-x-9 ml-52">
         <Link href="/" className="text-purple-900 hover:text-purple-700">
           Home
         </Link>
@@ -42,7 +56,7 @@ export default function Header() {
       </nav>
 
       {/* Mobile Hamburger */}
-      <div className="md:hidden ml-44 mt-2">
+      <div className="lg:hidden ml-60 mt-2">
         <button onClick={toggleDrawer}>
           <Menu className="text-purple-900 w-6 h-6" />
         </button>

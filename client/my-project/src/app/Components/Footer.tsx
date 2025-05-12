@@ -7,7 +7,7 @@ export default function Footer() {
         {/* About */}
         <div className="-ml-8">
           <h4 className="font-semibold text-lg mb-4 ">Cosmetics & Beauty</h4>
-          <p>
+          <p className="pr-9 leading-7">
             Empowering beauty through high-quality products and a connected
             community.
           </p>

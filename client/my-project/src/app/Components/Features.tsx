@@ -29,8 +29,8 @@ const features = [
 
 export default function Features() {
   return (
-    <section id="features" className=" py-12 px-6 text-center">
-      <h2 className="text-4xl   mb-6 text-purple-800 font-bold">
+    <section id="features" className=" py-16 px-6 text-center">
+      <h2 className="text-4xl   mb-10 text-purple-800 font-bold">
         Our Features
       </h2>
       <div className="grid gap-5 grid-cols-1 md:grid-cols-4 max-w-7xl mx-auto">

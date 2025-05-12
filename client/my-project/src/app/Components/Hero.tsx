@@ -9,7 +9,7 @@ export default function Hero() {
           className="bg-[#e6d3e9] h-[92vh] px-6 md:px-20 flex flex-col-reverse md:flex-row items-center justify-between gap-10"
         >
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <h2 className="text-3xl md:text-6xl pr-1 font-extrabold text-[#4c0f60] leading-25 font-serif">
+            <h2 className="text-3xl md:text-6xl pr-1 font-[520] text-[#4c0f60] leading-25 font-serif">
               Welcome to our
               <br />
               <span className="text-[#4c0d68]">Cosmetics & Beauty Website</span>
@@ -26,11 +26,11 @@ export default function Hero() {
 
           <div className="w-full md:w-1/2 flex justify-center">
             <Image
-              src="/hero-image.png" // Use the high-res image you generated
-              height={630}
-              width={630}
+              src="/hero4.png" // Use the high-res image you generated
+              height={500}
+              width={500}
               alt="Cosmetic Products"
-              className="w-full rounded-lg shadow-lg object-contain"
+              className=" "
               priority
             />
           </div>

@@ -101,9 +101,9 @@ export default function OurBlogsSlider() {
   };
 
   return (
-    <section className="bg-[#faf5ff] py-20 px-4 md:px-12">
+    <section className="bg-[#faf5ff] py-10 px-4 md:px-12">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-purple-900 text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold text-purple-900 text-center mb-8">
           Latest Articles
         </h2>
 
@@ -138,7 +138,7 @@ export default function OurBlogsSlider() {
           </Slider>
         </div>
 
-        <div className="flex justify-center mt-10">
+        <div className="flex justify-center mt-5">
           <button className="bg-purple-800 text-white px-6 py-2 rounded-md hover:bg-purple-900 transition">
             All Blogs
           </button>

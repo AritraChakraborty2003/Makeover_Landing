@@ -29,9 +29,9 @@ const testimonials = [
 
 export default function TestimonialSlider() {
   return (
-    <section className="py-10 pb-16 px-6 relative">
+    <section className="py-14 pb-16 px-6 relative">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-8">
           What Our Users Say
         </h2>
 
