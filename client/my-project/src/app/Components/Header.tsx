@@ -77,38 +77,54 @@ export default function Header() {
       <Drawer
         open={isOpen}
         onClose={toggleDrawer}
-        direction="left"
+        direction="right"
         className="bg-white p-6"
       >
         <nav className="flex flex-col gap-4 text-purple-900">
-          <Link href="/" className="text-purple-900 hover:text-purple-700">
+          <Link
+            onClick={toggleDrawer}
+            href="/"
+            className="text-purple-900 hover:text-purple-700"
+          >
             Home
           </Link>
-          <Link href="/about" className="text-purple-900 hover:text-purple-700">
+          <Link
+            onClick={toggleDrawer}
+            href="/about"
+            className="text-purple-900 hover:text-purple-700"
+          >
             About
           </Link>
-          <Link href="/team" className="text-purple-900 hover:text-purple-700">
+          <Link
+            onClick={toggleDrawer}
+            href="/team"
+            className="text-purple-900 hover:text-purple-700"
+          >
             Team
           </Link>
           <Link
+            onClick={toggleDrawer}
             href="#contact"
             className="text-purple-900 hover:text-purple-700"
           >
             Blogs
           </Link>
           <Link
+            onClick={toggleDrawer}
             href="#contact"
             className="text-purple-900 hover:text-purple-700"
           >
             Community
           </Link>
           <Link
+            onClick={toggleDrawer}
             href="#contact"
             className="text-purple-900 hover:text-purple-700"
           >
             Find Service
           </Link>
           <Link
+            onClick={toggleDrawer}
             href="#contact"
             className="text-purple-900 hover:text-purple-700"
           >
